@@ -204,7 +204,7 @@
                           <p class="ic"><img src="assets/images/icon/Timeline Commitments.png" alt=""></p>
 						  <h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Timeline Commitments</h2>
                             <h3>Installations executed around the clock with trained inhouse manpower,with a<span id="dots">... </span><span id="more">best-in-industry track record of delivering projects ahead of schedule </span></h3>
-							  <h2><button onclick="myFunction('dots','more','Btn')" id="Btn">Read more</button></h2>
+							<h2><button onclick="myFunction()" id="Btn">Read more</button></h2>
                           
                         </div>
                     </div>
@@ -219,7 +219,7 @@
 						   <h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Trained  Team</h2>
                             <h3>All of our team members are accredited for best installation practices and <span id="dots1">...</span><span id="more1"> product specifications,with industry certifications such as CCNA and CICD are mandatory for all associates at senior level.
 								Additionally, on-site experience in executing projects PAN-India for several sites enables the team to handle and resolve site related issues effectively and efficiently.</span></h3>   
-							  <h2><button onclick="myFunction('dots1','more1','Btn1')" id="Btn1">Read more</button></h2>							
+							<h2><button onclick="myFunction1()" id="Btn1">Read more</button></h2>							
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                             <p class="ic"><img src="assets/images/icon/Partner Relationships.png" alt=""></p>
 							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Partner Relationships </h2>
                             <h3>30 year long relationships with leading OEMS,including being awarded as a<span id="dots2">...</span><span id="more2">top-tier partner award for multiple years.This enables us to receive priority in delivery timelines, pricing terms as well as provides us with exclusive access to the latest offerings</span></h3>
-						 <h2><button onclick="myFunction('dots2','more2','Btn2')" id="Btn2">Read more</button></h2>
+						<h2><button onclick="myFunction2()" id="Btn2">Read more</button></h2>	
 					   </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                             <p class="ic"><img src="assets/images/icon/Financial Strength.png" alt=""></p>
 							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Financial Strength </h2>
                             <h3>By being focused and reinvesting into our core business, we have secured a healthy<span id="dots3">... </span><span id="more3">reserves of capital to meet the funding requirements of enterprise-grade projects for leading Fortune 500 companies</span></h3>                      
-                         <h2><button onclick="myFunction('dots3','more3','Btn3')" id="Btn3">Read more</button></h2>		
+                        <h2><button onclick="myFunction3()" id="Btn3">Read more</button></h2>	
 						</div>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                             <p class="ic"><img src="assets/images/icon/client centric.png" alt=""></p>
 							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Client-Centric Focus </h2>
                             <h3>We are committed to being professional,flexible and timely during<span id="dots4">... </span><span id="more4">each engagement and client interaction.This client-centric attitude enabled us to receive repeat business for 100% of our clients. We also prioritize providing solutions that meet the long-term needs of our clients.</span></h3>
-                           <h2><button onclick="myFunction('dots4','more4','Btn4')" id="Btn4">Read more</button></h2>
+                            <h2><button onclick="myFunction4()" id="Btn4">Read more</button></h2>
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                             <p class="ic"><img src="assets/images/icon/Support Excellence.png" alt=""></p>
 							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Support Excellence </h2>
                             <h3>First in industry to implement a centralized support model for post-implementation<span id="dots5">...</span><span id="more5"> support requests, with strict Service Level Agreements (SLAs) against initial response, resolution and status tracking. Our helpdesk acts as a single POC for all post-implementation support requests.</span></h3>
-							  <h2><button onclick="myFunction('dots5','more5','Btn5')" id="Btn5">Read more</button></h2>
+							<h2><button onclick="myFunction5()" id="Btn5">Read more</button></h2>   
 					</div>
                     </div>
                 </div>
@@ -272,35 +272,113 @@
 			</div>
 			</div>
 			
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("Btn");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+			
+<script>
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("Btn1");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
 </script>
 
 <script>
-  function myFunction(dots,more,btn) {
-    var listOfDots = ["dots","dots1","dots2","dots3","dots4","dots5"];
-    var listOfBtns = ["Btn","Btn1","Btn2","Btn3","Btn4","Btn5"];
-    var listOfmore = ["more","more1","more2","more3","more4","more5"];
-    
-    listOfDots.forEach((e,index)=> {
-        if(e != dots) {
-            document.getElementById(e).style.display = "inline";
-            document.getElementById(listOfmore[index]).style.display = "none";
-            document.getElementById(listOfBtns[index]).innerHTML = "Read more";
-        }
-        else{
-            if(document.getElementById(e).style.display == "none") {
-                document.getElementById(e).style.display = "inline";
-                document.getElementById(listOfmore[index]).style.display = "none";
-                document.getElementById(listOfBtns[index]).innerHTML = "Read more";
-            }
-            else {
-                document.getElementById(e).style.display = "none";
-                document.getElementById(listOfmore[index]).style.display = "inline";
-                document.getElementById(listOfBtns[index]).innerHTML = "Read less";
-            }               
-        }
-    })
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("Btn2");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
   }
-  </script>
+}
+</script>
+
+<script>
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("Btn3");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<script>
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("Btn4");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<script>
+function myFunction5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("Btn5");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 	<!-- particles.js container -->
 	
 	<!-- scripts -->
