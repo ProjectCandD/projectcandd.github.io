@@ -1,0 +1,107 @@
+<html>	
+	<head>
+		<link href="assets/images/favicon.png" rel="icon">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+		<link href="assets/css/templatemo-softy-pinko.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+	</head>
+	<section id="aboutc">
+	<div id="particles-js">
+	<div class="container pt">
+	<h2 style="font-size:16px;font-weight:900;text-align-center;color:#283C66;">USP of Concepts and Devices</h2>
+	<p class="text-center pb-2 fs"><strong>With over 30 years of experience, Concepts and Devices helps organizations design and implement technologically advanced network infrastructure solution.</strong></p>
+			  <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 w3-animate-zoom p-2">
+                    <div class="team-item cl h-100">
+                        <div class="team-content">
+                          <p class="ic"><img src="assets/images/icon/Timeline Commitments.png" alt=""></p>
+						  <h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Training, for best in industry practices</h2>
+                            <h3>From the basics of the product to achieving certification of the respective product <span id="dots">... </span><span id="more">commensurate to their level is not compromised. Academic growth in the brand and third-party certifications credit a high score in the appraisal ratings, growth in the organization</span></h3>
+							 <h2><button onclick="myFunction('dots','more','Btn')" id="Btn">Read more</button></h2>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 w3-animate-zoom p-2">
+                    <div class="team-item cl h-100">
+                        <div class="team-content">
+                           <p class="ic"><img src="assets/images/icon/Trained Team.png" alt=""></p>
+						   <h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Strong relationships for advantage customer </h2>
+                            <h3>Our commitment to deliver on expectations and maintain top-tier partner status <span id="dots1">...</span><span id="more1"> helped build strong relationships with our principals cascading into privileges such as pricing support, priority access to the latest offerings, allotment, and expedited delivery of material</span></h3>   
+							 <h2><button onclick="myFunction('dots1','more1','Btn1')" id="Btn1">Read more</button></h2>							
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="col-lg-4 col-md-6 col-sm-12 w3-animate-zoom p-2">
+                    <div class="team-item cl h-100">
+                        <div class="team-content">
+                            <p class="ic"><img src="assets/images/icon/Partner Relationships.png" alt=""></p>
+							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Financial planning for....</h2>
+                            <h3>Fund requirements are analyzed to meet requirements of projects, acquired <span id="dots2">...</span><span id="more2">accounts, orders in the pipeline, and growth potential of our existing customers without compromising on the debt to equity ratio, and a healthy return on investment for our stakeholders</span></h3>
+						<h2><button onclick="myFunction('dots2','more2','Btn2')" id="Btn2">Read more</button></h2>
+					   </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 col-sm-12 w3-animate-zoom p-2">
+                    <div class="team-item cl h-100">
+                        <div class="team-content">
+                            <p class="ic"><img src="assets/images/icon/Financial Strength.png" alt=""></p>
+							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Client centric focus....</h2>
+                            <h3>Testimonial of our client-centric attitude is the ability to retain clients. We are deeply <span id="dots3">... </span><span id="more3">committed to deep professionalism at every stage of engagement with our clients by practicing transparency in design and solution, pricing implementation, and warranty obligations.</span></h3>                      
+                       <h2><button onclick="myFunction('dots3','more3','Btn3')" id="Btn3">Read more</button></h2>	
+						</div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 col-sm-12 w3-animate-zoom p-2">
+                    <div class="team-item cl h-100">
+                        <div class="team-content">
+                            <p class="ic"><img src="assets/images/icon/client centric.png" alt=""></p>
+							<h2 style="font-size:16px;font-weight:700;text-align-center;margin-top:5px;">Support excellence to honour uptime commitments</h2>
+                            <h3>First in the industry to implement 24/7 single point of contact pan India with an <span id="dots4">... </span><span id="more4">independent agency to meet post-implementation support requests. Using artificial intelligence service requests are tracked for response time, real-time status, and elevation to the next level</span></h3>
+                             <h2><button onclick="myFunction('dots4','more4','Btn4')" id="Btn4">Read more</button></h2>
+                        </div>
+                    </div>
+                </div>
+				
+                <!-- ***** Testimonials Item End ***** -->
+            </div>
+			</div>
+			</div>
+			
+<script>
+  function myFunction(dots,more,btn) {
+    var listOfDots = ["dots","dots1","dots2","dots3","dots4","dots5"];
+    var listOfBtns = ["Btn","Btn1","Btn2","Btn3","Btn4","Btn5"];
+    var listOfmore = ["more","more1","more2","more3","more4","more5"];
+    
+    listOfDots.forEach((e,index)=> {
+        if(e != dots) {
+            document.getElementById(e).style.display = "inline";
+            document.getElementById(listOfmore[index]).style.display = "none";
+            document.getElementById(listOfBtns[index]).innerHTML = "Read more";
+        }
+        else{
+            if(document.getElementById(e).style.display == "none") {
+                document.getElementById(e).style.display = "inline";
+                document.getElementById(listOfmore[index]).style.display = "none";
+                document.getElementById(listOfBtns[index]).innerHTML = "Read more";
+            }
+            else {
+                document.getElementById(e).style.display = "none";
+                document.getElementById(listOfmore[index]).style.display = "inline";
+                document.getElementById(listOfBtns[index]).innerHTML = "Read less";
+            }               
+        }
+    })
+  }
+  </script>
+	<!-- particles.js container -->
+	
+	<!-- scripts -->
+	<script src="assets/js/particles.js"></script>
+	<script src="assets/js/app.js"></script>
+	</section>
+	
+	</html>
