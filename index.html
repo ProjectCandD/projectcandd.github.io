@@ -8,13 +8,11 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 	
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
+	
 	
 	
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -35,55 +33,62 @@
     <body>
       
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container w3-animate-zoom">
-                    <div class="main">
-						<div class="row align-items-center">
-						<div class="col-12 col-md-5 col-lg-4 text-left rwidth">
-						<div class="logo">
-							<p class="m-0"><a href="#"><img src="assets/images/favicon.png" class="w-100" alt="Concepts&Devices" style="max-width:42px" /></a></p>
-						</div>
-						<div class="logo-text position-relative">
-							<p class="text-uppercase m-0">Concepts & Devices</p>
-						</div>
-						</div>
-						<div class="col-12 col-md-7 col-lg-8 rwidth">
-							<ul class="top-level-menu">
-							<li><a href="#start" class="active">Home</a></li>
-							<li><a href="aboutc&d.html">About C & D</a></li>
-							<li><a href="#">Our Solutions</a>
-								<ul class="second-level-menu">
-									<li><a href="structure.html" target="_self">Structured Cabling</a></li>
-									<li><a href="#" target="_self">IP / PCM TDM Telephony </a></li>
-									<li><a href="#" target="_self">Surveillance Solutions</a></li>
-									<li><a href="#" target="_self">Audio Video Solutions</a></li>
-									<li><a href="#" target="_self">Active Networking Design </a></li>
-									<li><a href="#" target="_self">Data Center</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Case Study</a>
-								<ul class="second-level-menu">
-									<li>
-										<a href="#" target="_self">Case Study 1</a>
-										<ul class="third-level-menu">
-											<li><a href="PoE fiber solutions.html" target="_self">PoE fiber solutions</a></li>
-										</ul>
-									</li>
-									<li><a href="comingsoon.html" target="_self">Case Study 2</a></li>
-									<li><a href="comingsoon.html" target="_self">Case Study 3</a></li>
-								</ul>
-							</li>
-							<li><a href="#contact-us">Contact Us</a></li>
-						</ul>
-						
-						</div>
-						</div>
-                        <!-- ***** Menu End ***** -->
-                    </div>
-                </div>
-           
+ <header class="header-area header-sticky">
+	<div class="container">
+      <nav class="navbar">
+        <div class="branding">
+          <div class="logo">
+			<p class="m-0"><a href="#"><img src="assets/images/favicon.png" class="w-100" alt="Concepts&Devices" style="max-width:42px" /></a></p>
+		 </div>
+		<div class="logo-text position-relative">
+			<p class="text-uppercase m-0">Concepts & Devices</p>
+		</div>
+        </div>
+        <label for="input-hamburger" class="hamburger "></label>
+        <input type="checkbox" id="input-hamburger" hidden>
+        <ul class="menu">
+          <li><a href="#start" class="active">Home</a></li>
+		  <li><a href="aboutc&d.html">About C & D</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="menu-link">Our Solutions
+              <span class="arrow"></span>
+            </a>
+            <ul class="submenu">
+              <li><a href="structure.html" target="_self">Structured Cabling</a></li>
+			 <li><a href="comingsoon.html" target="_self">IP / PCM TDM Telephony </a></li>
+			<li><a href="comingsoon.html" target="_self">Surveillance Solutions</a></li>
+			<li><a href="comingsoon.html" target="_self">Audio Video Solutions</a></li>
+			<li><a href="comingsoon.html" target="_self">Active Networking Design </a></li>
+			<li><a href="comingsoon.html" target="_self">Data Center</a></li>
+            </ul>
+          </li>
+		  <li class="has-dropdown">
+            <a href="#" class="menu-link">Case Study
+              <span class="arrow"></span>
+            </a>
+            <ul class="submenu">
+              <li><a href="PoE fiber solutions.html" target="_self">PoE fiber solutions</a>
+			  <li class="has-dropdown d-none">
+                <a href="#" class="menu-link">Case Study 1
+                  <span class="arrow"></span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="#" class="menu-link">Case Study 1x1</a></li>
+                  <li><a href="#" class="menu-link">Case Study 1x2</a></li>
+                </ul>
+              </li>
+			  </li>
+            </ul>
+          </li>
+		  
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+	  
     </header>
+<!-- partial -->
+  <script  src="./script.js"></script>
+	
     
 <div class="slideshow" id="start">
 
@@ -192,46 +197,48 @@
   requestAnimationFrame(update);
 </script>
     <!-- ***** Contact Us Start ***** -->
-    <section class="section colored" id="contact-us">
+    <section class="section colored pt-4">
+	<div id="contact-us">
         <div class="container">
             <!-- ***** Section Title Start ***** -->
-           
-                
-                    <div class="center-heading" style="text-align: center;">
-                        <h2 class="section-title w3-animate-left">Talk To Us</h2>
+                    <div class="center-heading text-center pt-5">
+                        <h2 class="section-title beaf position-relative w3-animate-left">Talk To Us</h2>
                     </div>
                     <div class="fd1 mb-5 text-center w3-animate-zoom">
 					<div class="row">
 					<div class="col-12 col-lg-6 py-3">
-						<div class="f1 p-3">
+						<div class="f1 p-3 position-relative">
                         <p class="mb-2"><span><i class="fas fa-envelope"></i> sales@cd-voicedatasolutions.com</span></p>
 						<p><i class="fas fa-phone-alt"></i> +91 44 28298831</p>
 						</div>
 						</div>
 						<div class="col-12 col-lg-6 py-3">
-						<div class="f1 p-3">
+						<div class="f1 p-3 position-relative">
                         <p class="mb-2"><span><i class="fas fa-envelope"></i> helpdesk@cd-voicedatasolutions.com</span></p>
 						<p><i class="fa fa-whatsapp"></i> +91 7824008215</p>
 						</div>
 						</div>
 					</div>
                     </div>
+				</div>
+			</div>
            
             <!-- ***** Section Title End ***** -->
 <div id="ftr">
+<div class="container pt-5">
 <div class="row">
-<div class="map col-12 col-md-6">
+<div class="map col-12 col-md-6 rwidth text-center">
 <div class="map-location">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15644.805758783585!2d77.7765467!3d11.3929106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266153920fbaf%3A0x3aaf4a744c5ed437!2sConcepts%20%26%20Devices!5e0!3m2!1sen!2sin!4v1605541507982!5m2!1sen!2sin" width="500" height="290" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe class="map-border" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15644.805758783585!2d77.7765467!3d11.3929106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266153920fbaf%3A0x3aaf4a744c5ed437!2sConcepts%20%26%20Devices!5e0!3m2!1sen!2sin!4v1605541507982!5m2!1sen!2sin" width="500" height="290" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 							<div class="map-widget">
                             <div class="map-address">
                                 <img src="assets/imges/map-location.jpg" alt="">
                             </div>
                         </div>
                     </div>
-</div>
-<div class="col-12 col-md-6">
-<div class="contact-form">
+			</div>
+			<div class="col-12 col-md-6 rwidth">
+					<div class="contact-form">
                         <form id="contact" action="" method="get">
                           <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12">
@@ -260,14 +267,15 @@
 </div>
 </div>
 </div>
-<div id="ftr1">
-<div class="row" style="padding-top:25px">
+</div>
 
+<div id="ftr1">
+<div class="container">
+<h5 class="m-0">Branch Offices</h5>
+<div class="row" style="padding-top:25px">
 <div class="col-12 col-sm-6 col-md-3">
-<h5 class="margin-bottom-5">Branch Offices</h5>
                     <div class="contact-text">
                         <p><strong>Chennai HQ</strong>
-                        <br>2nd Floor
 						 <br>No 47 Greams Road 
 						 <br>Thousand Lights
 						 <br>Chennai-600 006
@@ -276,7 +284,6 @@
                     </div>
 </div>
 <div class="col-12 col-sm-6 col-md-3">
-<h5 class="margin-bottom-30"></h5>
                     <div class="contact-text">
                         <p><strong>Bangalore</strong>
                         <br>Unit No.303B, 
@@ -288,7 +295,6 @@
                     </div>
 </div>
 <div class="col-12 col-sm-6 col-md-3">
-<h5 class="margin-bottom-30"></h5>
                     <div class="contact-text">
                        <P><Strong>Hyderabad </Strong>
                         <Br>No. 5-140, Plot No. 83, 
@@ -300,7 +306,6 @@
                     </div>
 </div>
 <div class="col-12 col-sm-6 col-md-3">
-<h5 class="margin-bottom-30"></h5>
                     <div class="contact-text">
                         <p><strong>Delhi </strong>
                         <br>Khasra No. 63/16 & 63/17,  

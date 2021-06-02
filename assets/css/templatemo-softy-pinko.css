@@ -130,7 +130,7 @@ global styles
 }
 
 .left-heading .section-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   line-height: 42px;
   color: #1e1e1e;
@@ -146,10 +146,10 @@ global styles
 .center-heading .section-title {
   font-weight: 500;
   font-size: 28px;
-  color: #1e1e1e;
   letter-spacing: 1.75px;
   line-height: 38px;
   margin-bottom: 20px;
+  color:#fff
 }
 
 .center-heading.colored .section-title {
@@ -157,9 +157,9 @@ global styles
 }
 
 .fd1 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 
 .fd1 .fa{font-size:1.5rem;font-weight:900;}
@@ -335,7 +335,7 @@ button.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #283C66;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -371,114 +371,229 @@ header
     margin: 20px 0 0 20px;
 }
 
+:root {
+  box-sizing: border-box;
 
-  /* Menu Styles */
+  --primary: #e70146;
+  --hover-color: #fdd052;
+  --dark: #1c2022;
+  --light: #fff;
 
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    list-style: none;
-    margin: 0;
-    display: none;
-	padding: 5px 10px;
-	background:#fff;
-	border-radius:20px;
+  --header-bg: var(--primary);
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-.third-level-menu > li
-{
-    background: #fff;
-	
-}
-.third-level-menu > li a{color:#000}
-.third-level-menu > li a:hover{color: #ff589e;}
-
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    list-style: none;
-    margin: 0;
-    display: none;
-	padding: 5px 10px;
-    min-width:300px;
-	background:#fff;
-	border-radius:20px;
-}
-
-.second-level-menu > li
-{
-    position: relative;
-    background: #fff;
-}
-.second-level-menu > li a{color:#000}
-.second-level-menu > li a:hover{ color: #ff589e; }
-
-.top-level-menu
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.top-level-menu > li
-{
-    position: relative;
-    float: left;
-    height: 30px;
-    
-   
-}
-.top-level-menu > li:hover { color: #ff589e;}
-
-.top-level-menu li:hover > ul
-{
-    display: inline;
-}
-
-
-/* Menu Link Styles */
-
-.top-level-menu a /* Apply to all links inside the multi-level menu */
-{
-	font-size:0.95rem;
-	font-weight:400;
-    color: #000;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-    
-    /* Make the link cover the entire list item-container */
-    display: block;
-    line-height: 30px;
-}
-.top-level-menu li{padding:5px 18px}
-.top-level-menu a:hover { color: #ff589e; }
-
-.header-area .main {
+.header-area .navbar{
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 40px;
   min-height: 80px;
   background: #fff;
 }
 
-.header-area .main .logo {
-  
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  max-width:250px;
-  
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 18px;
+  font-size: 1rem;
 }
 
-.header-area .main .logo img {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+/* Styling submenu */
+.has-dropdown {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  white-space: nowrap;
+  padding: 8px 0 0 20px;
+  min-width: 16em;
+  border-radius:20px;
+
+  /* hide submenus */
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+.submenu > li > a {
+  padding: 10px 18px;
+}
+.submenu .submenu {
+  left: -100%;
+  top: 0;
+}
+.submenu .submenu .submenu {
+  left: -100%;
+  top: 0;
+}
+
+.menu > li:hover > a,
+.submenu > li:hover > a {
+  color: #ff589e;
+}
+
+
+/* Arrows */
+
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-top: -0.25em;
+  transition: transform 100ms ease-in-out;
+}
+
+/* Reveal  */
+.menu > li:hover > a + .submenu,
+.submenu > li:hover > a + .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* ANIMATE aRROWS */
+.menu > li:hover > a > .arrow,
+.submenu > li:hover > a > .arrow {
+  transform: rotate(225deg);
+}
+
+@media only screen and (max-width: 78.75em) {
+  .submenu .submenu .submenu {
+    left: -100%;
+    top: 0.5em;
+  }
+  .submenu {
+    min-width: 16em;
+  }
+}
+@media only screen and (max-width: 58.75em) {
+  .menu li a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+/*     position: relative; */
+    padding: 1.5em 2em;
+  }
+  .menu {
+    flex-flow: column;
+    position: absolute;
+    background: var(--light);
+    top: 4.55em;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms,
+      100ms opacity ease-in-out;
+    
+    overflow-y: scroll;
+    
+  }
+  .submenu:hover .menu{height: 520px;}
+  .menu > li > a {
+    font-size: 1rem;
+    color: var(--dark);
+  }
+  .submenu > li > a {
+    font-size: 1rem;
+  }
+
+  .submenu {
+    top: 0;
+    padding-left: 1.5em;
+   
+  }
+  .submenu .submenu {
+    left: 0;
+    top: 0;
+  }
+  .submenu .submenu .submenu {
+    left: 0;
+    top: 0;
+  }
+
+  .menu > li:hover > a + .submenu,
+  .submenu > li:hover > a + .submenu {
+    position: relative;
+  }
+
+  .hamburger {
+    width: 2em;
+    height: 0.25em;
+    display: block;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s transform ease-in-out;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: inherit;
+    width: inherit;
+    height: inherit;
+
+    transition: 0.2s transform ease-in-out;
+  }
+
+  .hamburger::after {
+    top: 0.65em;
+  }
+  .hamburger::before {
+    bottom: 0.65em;
+  }
+
+  .close::after,
+  .close::before {
+    top: 0;
+    transition: 0.2s transform ease-in-out;
+  }
+  .close::before {
+    display: none;
+  }
+  .close {
+    transform: rotate(45deg);
+    transition: 0.2s transform ease-in-out;
+  }
+  .close::after {
+    transform: rotate(-90deg);
+  }
+
+  /* reveal menu */
+  input[type="checkbox"]:checked + .menu {
+    position: absolute;
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 
 
@@ -1070,6 +1185,15 @@ contact
   resize: none;
   padding: 20px;
 }
+#contact-us{background: url(../images/pexels-pixabay-459654.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;height:200px;}
+#ftr{padding:50px 0 0}
+.map-border{border-radius:25px}
+#ftr1 h5{text-align: center;background: #3333;padding: 10px;border-radius: 20px;font-weight:600}
+.f1{
+	background:#30497bd9;border-radius:25px;top:25px
+	}
+.f1 .fa-whatsapp{color:#4fce5d}
+.f1 .fa-phone-alt{color:#4885ed}
 
 /* 
 ---------------------------------------------
@@ -1266,11 +1390,6 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 .ic{text-align:center}
 .ic img{width:100%;max-width:50px;}
 
-.f1{
-	background:#fff;border-radius:25px;
-	}
-	.f1 .fa-whatsapp{color:#4fce5d}
-	.f1 .fa-phone-alt{color:#4885ed}
 
 #myBtn {
   display: none;
@@ -1314,17 +1433,15 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 #start .rm{padding:15px 0 10px 0;text-align:center;position:absolute;right:0;bottom:20%;margin-right:30px}
 
 #aboutc{padding-bottom:60px}
-.count-item li .plus{}
 
-@media (max-width: 1199px) {
-	.header-sticky .container{width:100%;max-width:100%;padding:0;}
-	.header-area .main-nav{border-radius:0}
-}
+.beaf:before{content: '';position: absolute;width: 115px;height: 4px;border-radius: 4px;left: 0;right:0;margin:0 auto;top: 45px;background:#FF317C}
 
-@media (max-width: 1301px) {
+@media (max-width: 992px) {
 	.rwidth{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
-	.rwidth{text-align:center}
+	#contact-us{height:auto}
+	.f1{top:0}
 }
+
 
 @media (max-width: 767px) {
 	.txt{font-size:1.70rem}
@@ -1333,10 +1450,6 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 @media (max-width: 560px) {
 	.prev, .next{font-size:30px}
 }
-
-
-
-
 
 
 
