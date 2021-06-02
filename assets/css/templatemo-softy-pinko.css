@@ -545,7 +545,7 @@ header
   }
 
   .hamburger {
-    width: 2em;
+    width: 1.5em;
     height: 0.25em;
     display: block;
     background: #000;
@@ -1449,6 +1449,7 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 
 @media (max-width: 560px) {
 	.prev, .next{font-size:30px}
+	.logo-text p{font-size:1rem}
 }
 
 
