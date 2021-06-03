@@ -113,10 +113,6 @@ global styles
 }
 
 
-.section.colored {
-  background: #f2f2fe;
-}
-
 .hr {
   bottom: 0px;
   width: 100%;
@@ -1157,6 +1153,7 @@ contact
   color: #6F8BA4;
   letter-spacing: 0.6px;
   line-height: 26px;
+  text-align:left;
 }
 
 .contact-text p {
@@ -1189,9 +1186,7 @@ contact
 #ftr{padding:50px 0 0}
 .map-border{border-radius:25px}
 #ftr1 h5{text-align: center;background: #3333;padding: 10px;border-radius: 20px;font-weight:600}
-.f1{
-	background:#30497bd9;border-radius:25px;top:25px
-	}
+.f1{background:rgba(255,198,0,0.85);border-radius:25px;top:25px;color:#4d148c}
 .f1 .fa-whatsapp{color:#4fce5d}
 .f1 .fa-phone-alt{color:#4885ed}
 
@@ -1320,7 +1315,7 @@ footer .copyright {
 
 }
 
-.txt p{ text-shadow: 1px 1px 2px black, 0 0 14px #ff31dc, 0 0 14px #ff317c;}
+.txt p,.count-item li,.count-item strong,.count-item span{ text-shadow: 1px 1px 2px black, 0 0 14px #ff31dc, 0 0 14px #ff317c;}
 
 
 
@@ -1436,20 +1431,25 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 
 .beaf:before{content: '';position: absolute;width: 115px;height: 4px;border-radius: 4px;left: 0;right:0;margin:0 auto;top: 45px;background:#FF317C}
 
+.hp #particles-js{height:770px}
+
 @media (max-width: 992px) {
 	.rwidth{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
 	#contact-us{height:auto}
 	.f1{top:0}
+	.hp #particles-js{height:1200px}
 }
 
 
 @media (max-width: 767px) {
 	.txt{font-size:1.70rem}
+	.hp #particles-js{height:1350px}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 575px) {
 	.prev, .next{font-size:30px}
 	.logo-text p{font-size:1rem}
+	.hp #particles-js{height:1600px}
 }
 
 
