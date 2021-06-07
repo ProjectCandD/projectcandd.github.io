@@ -837,9 +837,10 @@ parallax & home seperator
   background-size: cover;
   background-position: center center;
   z-index: 2;
-  top: 92px;
+  top: 0;
   left: -20%;
   height:100%;
+  bottom:0;
 }
 
 .counter .content {
@@ -849,7 +850,7 @@ parallax & home seperator
 }
 
 .counter .content .count-item {
-  height: 290px;
+  height: 100%;
   position: relative;
   float: left;
   width: 100%;
@@ -892,7 +893,7 @@ parallax & home seperator
 }
 
 .counter .content .count-item:hover strong {
-  margin-top: 110px;
+  padding-top: 10px;
 }
 
 .counter .content .count-item strong {
@@ -903,7 +904,6 @@ parallax & home seperator
   letter-spacing: 0.25px;
   margin-bottom: 10px;
   color: #fff;
-  margin-top: 120px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1186,7 +1186,8 @@ contact
 #ftr{padding:50px 0 0}
 .map-border{border-radius:25px}
 #ftr1 h5{text-align: center;background: #3333;padding: 10px;border-radius: 20px;font-weight:600}
-.f1{background:rgba(255,198,0,0.85);border-radius:25px;top:25px;color:#4d148c;font-weight: 600}
+.f1{background:rgba(255,198,0,0.85);border-radius:25px;top:25px;font-weight: 600}
+.f1 p a{color:#4d148c}
 .f1 .fa-whatsapp{color:#4fce5d}
 .f1 .fa-phone-alt{color:#4885ed}
 
@@ -1433,8 +1434,40 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 
 .hp #particles-js{height:770px}
 
-@media (max-width: 1119px) {
-.counter .content .count-item{padding-top:100px}
+#partners{background:#283C66} 
+#partners h2,.clnt h2{color:#fff;font-size:2rem;font-weight:600}
+#partners img{max-width:190px;border-radius:25px}
+#client{background: url(../images/client.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
+.clnt{padding:50px 0;background:rgb(34 34 43 / 52%)}
+.clnt p{display: inline-block;padding:20px;background:rgb(245 240 240 / 52%);border-radius:30px;font-size:1.25rem;font-weight:600;color:#283C66;}
+
+#certi{background: url(../images/certi.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+#certi h2{color:#000}
+#certi p{font-size:1.10rem;color:#fff}
+.cerfn{background:#283C66}
+.cerfn:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #FF317C;
+    background: none;
+    z-index: 1;
+}
+.cerfn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid #FF317C;
+    background: none;
+    z-index: 1;
 }
 
 @media (max-width: 992px) {
