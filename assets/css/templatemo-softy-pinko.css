@@ -1266,7 +1266,7 @@ footer .copyright {
   color: #fff;
   font-size: 2.50rem;
   font-weight: 1000;
-  padding:20% 0;
+  padding:300px 0 200px;
   text-align: center;
 
 }
@@ -1320,13 +1320,17 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 }
 .hp body{background: url(../images/1.png) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;width:100%}
 .about body{background: url(../images/Abstract.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
-#myBtn:hover {
-  background-color: #283C66;
-}
-.btn{font-size:15px;font-weight:700;text-transform:uppercase;border:solid 1px orange;background:orange;color:#fff;border-radius:25px;padding:10px 15px;}
+.expinfo body{background: url(../images/2.png) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
+.actnet body{background: url(../images/2.AdobeStock_224845489_Previewf.png) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
+.adiovdio body{background: url(../images/AdobeStock_376582474_Preview1.png) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
+
+
+
+.btn{font-size:17px;font-weight:700;text-transform:uppercase;border:solid 1px orange;background:orange;color:#fff;border-radius:25px;padding:10px 22px;}
 .btn:hover{background: #FF317C;border:solid 1px #FF317C;color:#fff;}
-
-
+.btn1{font-size:16px;font-weight:700;background: DodgerBlue;border-radius:25px;padding:14px 20px;color:#fff;text-transform:uppercase;}
+.btn1:hover{background: RoyalBlue;color:#fff}
+.btn1 .fa{font-size:25px}
 
 #support img{
 	width:100%;
