@@ -75,7 +75,6 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family:'Quicksand', sans-serif;
   font-weight: 400;
-  background-color: #fff;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -449,19 +448,6 @@ header
 }
 
 
-/* Arrows */
-
-.arrow {
-  width: 0.5em;
-  height: 0.5em;
-  display: inline-block;
-  vertical-align: middle;
-  border-left: 0.15em solid currentColor;
-  border-bottom: 0.15em solid currentColor;
-  transform: rotate(-45deg);
-  margin-top: -0.25em;
-  transition: transform 100ms ease-in-out;
-}
 
 /* Reveal  */
 .menu > li:hover > a + .submenu,
@@ -470,11 +456,8 @@ header
   transform: scaleY(1);
 }
 
-/* ANIMATE aRROWS */
-.menu > li:hover > a > .arrow,
-.submenu > li:hover > a > .arrow {
-  transform: rotate(225deg);
-}
+
+
 
 @media only screen and (max-width: 78.75em) {
   .submenu .submenu .submenu {
@@ -494,7 +477,7 @@ header
 @media only screen and (max-width: 991px) {
   header {
 /*     position: relative; */
-    padding: 1.5em 2em;
+   
   }
   .menu {
     flex-flow: column;
@@ -589,6 +572,7 @@ header
     position: absolute;
     opacity: 1;
     transform: scaleY(1);
+	border-radius:25px;
   }
 }
 
@@ -1277,95 +1261,17 @@ footer .copyright {
 
 
 
-/* Slideshow container */
-.slideshow{
-  position: relative;
-  margin: auto;
-  
-}
-
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 36%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  font-weight: 2000;
-  font-size: 50px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.prev, .next,.prev:hover,.next:hover{color:#FF317C}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
 /* Caption text */
 .txt {
   color: #fff;
   font-size: 2.50rem;
   font-weight: 1000;
-  position: absolute;
-  bottom: 35%;
-  width: 100%;
+  padding:20% 0;
   text-align: center;
 
 }
 
 .txt p,.count-item li,.count-item strong,.count-item span{ text-shadow: 1px 1px 2px black, 0 0 14px #ff31dc, 0 0 14px #ff317c;}
-
-
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dt .active, .dot:hover {
-  background-color: #283C66;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 
 .logo-text{top: -32px;left: 65px}
 .logo-text p{font-size:1.10rem;font-weight:700;color:#000}
@@ -1388,7 +1294,6 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 	position:absolute;right:0;left:0;z-index:+1;
 	
 }
-.fs{font-size:13px}
 
 .ic{text-align:center}
 .ic img{width:100%;max-width:50px;}
@@ -1413,16 +1318,15 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
     -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
     box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
 }
-
+.hp body{background: url(../images/1.png) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;width:100%}
+.about body{background: url(../images/Abstract.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 #myBtn:hover {
   background-color: #283C66;
 }
 .btn{font-size:15px;font-weight:700;text-transform:uppercase;border:solid 1px orange;background:orange;color:#fff;border-radius:25px;padding:10px 15px;}
 .btn:hover{background: #FF317C;border:solid 1px #FF317C;color:#fff;}
-#more,#more1,#more2,#more3,#more4,#more5{display: none;}
 
-#Btn,#Btn1,#Btn2,#Btn3,#Btn4,#Btn5{font-size:13px;font-weight:400;color:#fff;border-radius:25px;padding:8px;background: #FF317C;border:solid 1px #FF317C;}
-#Btn:hover,#Btn1:hover,#Btn2:hover,#Btn3:hover,#Btn4:hover,#Btn5:hover{color:#fff;border:solid 1px orange;background:orange;}
+
 
 #support img{
 	width:100%;
@@ -1433,13 +1337,13 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 }
 
 #start .bk{height:500px}
-#start .rm{padding:15px 0 10px 0;text-align:center;position:absolute;right:0;bottom:20%;margin-right:30px}
+
 
 #aboutc{padding-bottom:60px}
 
 .beaf:before{content: '';position: absolute;width: 115px;height: 4px;border-radius: 4px;left: 0;right:0;margin:0 auto;top: 45px;background:#FF317C}
 
-.hp #particles-js{height:770px}
+#particles-js{height:770px}
 
 #partners{background:#283C66} 
 #partners h2,.clnt h2{color:#fff;font-size:2rem;font-weight:600}
@@ -1493,7 +1397,6 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 }
 
 @media (max-width: 575px) {
-	.prev, .next{font-size:30px}
 	.logo-text p{font-size:1rem}
 	.hp #particles-js{height:1600px}
 }
