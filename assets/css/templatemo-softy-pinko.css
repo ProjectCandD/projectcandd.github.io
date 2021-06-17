@@ -1331,9 +1331,9 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 
 .btn{font-size:17px;font-weight:700;text-transform:uppercase;border:solid 1px orange;background:orange;color:#fff;border-radius:25px;padding:10px 22px;}
 .btn:hover{background: #FF317C;border:solid 1px #FF317C;color:#fff;}
-.btn1{font-size:16px;font-weight:700;background: DodgerBlue;border-radius:25px;padding:14px 20px;color:#fff;text-transform:uppercase;}
-.btn1:hover{background: RoyalBlue;color:#fff}
-.btn1 .fa{font-size:25px}
+.homefa .fa{font-size:40px;color: #FF317C}
+.homefa .fa:hover{color: #FF317C}
+
 
 #support img{
 	width:100%;
