@@ -1352,12 +1352,12 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 
 #particles-js{height:770px}
 
-#partners{background:#283C66} 
+#partners{background:#001b94} 
 #partners h2,.clnt h2{color:#fff;font-size:2rem;font-weight:600}
 #partners img{max-width:190px;border-radius:25px}
 #client{background: url(../images/client.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 .clnt{padding:50px 0;background:rgb(34 34 43 / 52%)}
-.clnt p{display: inline-block;padding:20px;background:rgb(245 240 240 / 52%);border-radius:30px;font-size:1.25rem;font-weight:600;color:#283C66;}
+.clnt p{display: inline-block;padding:20px;background:rgb(245 240 240 / 52%);border-radius:30px;font-size:1.25rem;font-weight:600;color:#001b94;}
 
 #certi{background: url(../images/certi.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
 #certi h2{color:#000}
