@@ -1308,7 +1308,7 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
     -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
     box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
 }
-.hp body{background: url(../images/1.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;width:100%}
+.hp body{background: url(../images/1.png) no-repeat center center/cover;}
 .expinfo body{background: url(../images/2.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 .actnet body{background: url(../images/2.AdobeStock_224845489_Previewf.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 .adiovdio body{background: url(../images/AdobeStock_376582474_Preview1.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
@@ -1385,7 +1385,7 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 
 
 @media (max-width: 767px) {
-	.txt{font-size:1.70rem}
+	.txt{font-size:2rem}
 	.hp #particles-js{height:1350px}
 	.header-area .container{padding:0;width:100%;max-width:100%}
 }
