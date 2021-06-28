@@ -1309,7 +1309,6 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
     box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
 }
 .hp body{background: url(../images/1.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;width:100%}
-.about body{background: url(../images/Abstract.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 .expinfo body{background: url(../images/2.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 .actnet body{background: url(../images/2.AdobeStock_224845489_Previewf.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
 .adiovdio body{background: url(../images/AdobeStock_376582474_Preview1.png) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
@@ -1349,9 +1348,7 @@ background: url(../images/pexels-brett-sayles-5073493.jpg) no-repeat fixed cente
 .clnt{padding:50px 0;background:rgb(34 34 43 / 52%)}
 .clnt p{display: inline-block;padding:20px;background:rgb(245 240 240 / 52%);border-radius:30px;font-size:1.25rem;font-weight:600;color:#001b94;}
 
-#certi{background: url(../images/certi.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
-#certi h2{color:#000}
-#certi p{font-size:1.10rem;color:#fff}
+.certi body{background: url(../images/certi.jpg) no-repeat fixed center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
 .cerfn{background:#283C66}
 .cerfn:before {
     position: absolute;
